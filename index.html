@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+    <!-- map cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+  
+   
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h2>IP Address Tracker</h2>
+      <div class="searchbox">
+        <input type="text" placeholder="Search for any IP address or domain" id="userinput" >
+        <button><img src="images/icon-arrow.svg" /></button>
+      </div>
+    </header>
+    <section class="ip-information">
+      <div class="card-box">
+        <div class="card">
+          <p>IP Address</p>
+          <h2>---------</h2>
+        </div>
+        <div class="card">
+          <p>Location</p>
+          <h2>---------</h2>
+        </div>
+        <div class="card">
+          <p>Timezone</p>
+          <h2>---------</h2>
+        </div>
+        <div class="card">
+          <p>Isp</p>
+          <h2>---------</h2>
+        </div>
+      </div>
+    </section>
+    <div id="mapid">
+      
+    </div>
+  </div>
+  
+
+
+
+
+  <script src="script.js" type="application/javascript"></script>
+  
+</body>
+</html>

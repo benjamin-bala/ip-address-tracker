@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    cursor: default;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 5rem;
+    height: 30rem;
+    background: url('images/pattern-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header h2{
+    color: #fafafa;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+}
+.searchbox{
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    width: 70rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+.searchbox input{
+    background: none;
+    border: none;
+    padding: 1.7rem 1rem;
+    width: 90%;
+    cursor: pointer;
+    outline: none;
+}
+.searchbox button{
+    width: 10%;
+    border-radius: 0rem 1rem 1rem 0rem;
+    height: 100%;
+    border: none;
+    background-color: hsl(0, 0%, 17%);
+    padding: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+.searchbox button img{cursor: pointer;}
+.searchbox button:hover{
+    background-color: hsl(0, 0%, 59%)
+}
+.ip-information{
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   top: 20rem;
+   width: 100%;
+   z-index: 1212;
+}
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafafa;
+    padding: 2rem 5rem;
+    /* text-align: center; */
+    border-radius: 1rem;
+    width: 70%;
+    height: 15rem;
+    box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.11);
+}
+.card{
+    padding: 1rem 3rem;
+    border-right: 1px solid #ccc;
+}
+.card:last-child{
+    border: none;
+}
+.card p{
+    font-size: 1.8rem;
+    color: #777;
+    font-weight: 600;
+    text-align: left;
+}
+.card h2{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+#mapid{
+    height: 70vh;
+}
+
+@media(max-width: 768px){
+    html{
+        font-size: 50%;
+    }
+    .searchbox{
+        width: 100%;
+    }
+   .card-box{
+       flex-direction: column;
+       height: auto;
+       width: 100%;
+       margin: 0rem 5rem;
+   }
+   .card{
+       border: none;
+   }
+   .card p{
+       text-align: center;
+   }
+   .map{
+       height: 100vh;
+   }
+}
